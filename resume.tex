@@ -1,0 +1,145 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[dvipsnames]{xcolor}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[margin=1in]{geometry}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    
+    \definecolor{twit}{rgb}{0.1, 0.62, 0.91}
+    
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+%\Huge \scshape%
+	{\Huge {Byron Garcia |} \textcolor {twit}{Twitter Intership}}\\
+	byronogarcia@gmail.com $\cdot$ (415) 827-7609 $\cdot$ 3575 Santa Monica Ct, Merced, CA $\cdot$ github.com/byronogarcia $\cdot$ linkedin.com/in/byronogarcia \\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{University of California, Merced}\hfill Merced, CA\\
+BS Computer Science \& Engineering \textit{GPA: 2.73} \hfill Aug 2016 - May 2020\\
+\vspace{3mm}
+
+\header{Course Projects}
+{\textbf{Tic Tac Toe}} {\sl C++} \\
+During my Object-Oriented Programming course I built a 2D Tic Tac Toe game using the graphics library OpenGL. The program allows for two modes, player vs player, and, player vs AI. The AI for this program picks an open square to do its move, not a complex or "smart" AI.\\
+\vspace*{3mm}
+{\textbf{TinyOS Network Applications}} {\sl nesC} \\
+For my Computer Networks course a partner and I designed network applications with a variation of C, nesC, to implement on a network. The applications so far are packet flooding, neighbor discovery, distance vector routing, and forwarding.\\
+\vspace*{3mm}
+{\textbf{Binary Search}} {\sl MIPS Assembly Language} \\
+Developed a program in MIPS, a low level language, which took in a list size, list contents, and a key. The program then sorted the list and performed binary search to look for a key.\\
+\vspace*{3mm}
+
+\header{Relevant Courses}
+\begin{tabular}{ l l }
+Data Structures, Computer Organization, Object-Oriented Programming \& Computer Networks
+\end{tabular}
+\vspace{3mm}
+
+
+\header{Programming Languages - Years}
+\begin{tabular}{ l l }
+	C++ - 3 $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ C - 2+ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ Java - 2+ \\
+	MIPS - 1+ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$  $\>$ $\>$ $\>$ $\>$ $\>$ nesC - 1+ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ $\>$ Python - 1+ \\
+\end{tabular}
+\vspace{3mm}
+
+\header{Affiliations \& Clubs}
+%\textbf{Sigma Chi Fraternity}\\%
+
+\vspace*{2mm}
+\textbf{Super Smash Bros. Club}\\
+
+\vspace*{2mm}
+\textbf{Association for Computer Machinery}\\
+
+\vspace*{2mm}
+
+%==== Experience ====%
+%\header{No Work Exp}
+%\vspace{1mm}
+
+%\textbf{goog} \hfill mount v\\
+%\textit{soft eng} \hfill may 15 | may 17\\
+%\vspace{-1mm}
+%\begin{itemize} \itemsep 1pt
+%	\item did cool stuff
+%\end{itemize} 
+
+\header{References}
+\textbf{John Doty}\hfill johndoty@gmail.com\\
+Ph.D. Language and Literacy - I Can Read Initiative\\
+\vspace{3mm}
+\textbf{Tiffany Haley}\hfill tiffany.haley@cityofsanrafael.org\\
+Program Coordinator - City of San Rafael\\
+\vspace{3mm}
+
+\end{document}
